@@ -1,14 +1,15 @@
 {
   "name": "pretalab-transactions-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "tsc",
-    "start" : "node dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn src/index.ts",
     "test": "jest --config jest.config.js --runInBand",
-    "test:coverage": "jest --coverage" 
+    "test:unit": "jest ./tests/unit --config jest.config.js --runInBand",
+    "test:integration": "jest ./tests/integration --config jest.config.js --runInBand",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +22,11 @@
     "@types/node": "^24.0.10",
     "@types/supertest": "^6.0.3",
     "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.10"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -32,5 +35,17 @@
     "ts-jest": "^29.4.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byEduarda/pretalab-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byEduarda/pretalab-api/issues"
+  },
+  "homepage": "https://github.com/byEduarda/pretalab-api#readme",
+  "description": ""
 }
