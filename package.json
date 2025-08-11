@@ -7,7 +7,7 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn src/index.ts",
     "test": "jest --config jest.config.js --runInBand",
-    "test:unit": "jest ./tests/unit --config jest.config.js --runInBand --detectOpenHandles --forceExit",
+    "test:unit": "jest ./tests/unit --config jest.config.js --runInBand",
     "test:integration": "jest ./tests/integration --config jest.config.js --runInBand --detectOpenHandles --forceExit",
     "test:coverage": "jest --coverage"
   },
@@ -22,11 +22,9 @@
     "@types/node": "^24.0.10",
     "@types/supertest": "^6.0.3",
     "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "nodemon": "^3.1.10"
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
