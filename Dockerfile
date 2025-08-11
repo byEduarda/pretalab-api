@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy package.json and package-lock.json (or yarn.lock) first to leverage Docker's cache
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies 
 RUN npm install
 
 # Copy the rest of the application code
