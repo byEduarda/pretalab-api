@@ -5,6 +5,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
    console.log(`Servidor rodando na porta ${PORT}`) 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 })
 
 const res = {
@@ -43,6 +44,9 @@ const res = {
   "responseId": "NL-baOnACfKcnvgPraXxwQ4"
 }
 
+=======
+})
+>>>>>>> Stashed changes
 =======
 })
 >>>>>>> Stashed changes

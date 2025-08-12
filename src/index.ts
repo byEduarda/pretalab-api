@@ -22,7 +22,14 @@ app.post("/ai", async (req, res) => {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 export default app;
+=======
+app.get("/transactions/:id", getTransactionById);
+
+
+export default app;
+>>>>>>> Stashed changes
 =======
 app.get("/transactions/:id", getTransactionById);
 
