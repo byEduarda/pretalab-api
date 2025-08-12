@@ -4,6 +4,8 @@ import { getTransactionById } from "./controller/transaction";
 
 const app = express();
 
+app.use(express.json());
+
 app.get("/", (_req, res) => {
   res.json({ message: "Transactions API" });
 });
@@ -12,10 +14,17 @@ app.get("/transactions", (_req, res) => {
   res.json({ transactions });
 });
 
-app.get("/transactions/:id", (req, res) => getTransactionById(req, res));
+app.post("/ai", async (req, res) => {
+  const { text } = req.body;
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+  res.json({ text: "teste"});
 });
 
+<<<<<<< Updated upstream
 export default app;
+=======
+app.get("/transactions/:id", getTransactionById);
+
+
+export default app;
+>>>>>>> Stashed changes
